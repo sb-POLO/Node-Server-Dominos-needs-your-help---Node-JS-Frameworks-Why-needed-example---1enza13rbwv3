@@ -10,7 +10,7 @@ function handleServer(req, res) {
     });
     res.end('Welcome to Dominos!');
   }
-  if(res.url === '/contact'){
+  else if(res.url === '/contact'){
     res.writeHead(200,{
       'Content-Type': 'application/json';
     });
@@ -18,6 +18,10 @@ function handleServer(req, res) {
        phone: '18602100000',
        email: 'guestcaredominos@jublfood.com'
     });
+  }
+  else{
+    res.writeHead(404);
+    res.end();
   }
 }
 
