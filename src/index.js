@@ -12,7 +12,7 @@ function handleServer(req, res) {
   }
   else if(res.url === '/contact'){
     res.writeHead(200,{
-      'Content-Type': 'application/json';
+      'Content-Type': 'application/json'
     });
     res.end(JSON.stringify({
        phone: '18602100000',
