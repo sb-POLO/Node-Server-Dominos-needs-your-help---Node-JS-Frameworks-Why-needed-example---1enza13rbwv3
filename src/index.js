@@ -14,10 +14,10 @@ function handleServer(req, res) {
     res.writeHead(200,{
       'Content-Type': 'application/json'
     });
-    res.end(JSON.stringify({
+    res.end({
        phone: '18602100000',
        email: 'guestcaredominos@jublfood.com'
-    }));
+    });
   }
   else{
     res.writeHead(404);
