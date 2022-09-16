@@ -19,10 +19,10 @@ function handleServer(req, res) {
        email: 'guestcaredominos@jublfood.com'
     });
   }
-  else{
-    res.writeHead(404);
-    res.end();
-  }
+//   else{
+//     res.writeHead(404);
+//     res.end();
+//   }
 }
 
 httpServer.listen(8081);
